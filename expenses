@@ -1,0 +1,16 @@
+
+
+class Expense:
+    """
+    Represents a single expense with a name, amount, and category.
+    Used by the Expense Tracker main program.
+    """
+
+    def __init__(self, name: str, amount: float, category: str):
+        self.name = name
+        self.amount = amount
+        self.category = category
+
+    def __repr__(self):
+        """Return a human-readable string representation of the expense."""
+        return f"<Expense: {self.name}, ${self.amount:.2f}, Category: {self.category}>"
